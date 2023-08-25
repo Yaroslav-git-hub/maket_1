@@ -1,0 +1,138 @@
+:root {
+    --bgColor: #191919;
+    --tytleColor: #ffffff;
+    --textColor: #ccc;
+}
+
+
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--bgColor);
+    color: var(--tytleColor);
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.header__container {
+    max-width: 1400px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+.header__logotive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px 0 0;
+}
+
+.header__list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__link {
+    color: var(--tytleColor);
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    transition: all .35s ease-in-out;
+}
+
+.header__link:hover {
+    color: #118DA8;
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.header__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+}
+
+.header__row--right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 90px;
+}
+
+.header__row--text {
+    font-size: 70px;
+    color: var(--tytleColor);
+    max-width: 400px;
+}
+
+.header__row--text span {
+    position: relative;
+    width: 160px;
+    font-size: 75px;
+    line-height: 88px;
+    letter-spacing: 3.2px;
+    padding: 0 0 5px 0;
+}
+
+.header__row--text span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/line.svg);
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-position: bottom;
+}
+
+
+.header__row--music {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0 22px;
+}
+
+.list-musicIcons {
+    display: flex;
+    gap: 17px;
+}
+
+.header__row--link-musicIcons {
+    transition: all .35s ease-in-out;
+    border-radius: 50%;
+    padding: 0 0 3px;
+}
+
+
+.header__row--link-musicIcons:hover {
+    box-shadow: 0 0 10px #ffffff;
+    transform: scale(1.02);
+}
+
+.header__row--img-musicIcons {
+    transition: all .35s ease-in-out;
+}
+
+.header__row--img-musicIcons:hover {
+    transform: scale(1.35);
+}
